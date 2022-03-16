@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+}
+header {
+    background-color: #2A4159;
+    height: 70px;
+}
+header h1 {
+    margin: auto;
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.sub-header h2 {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    text-align: center;
+}
+.sub-header p {
+    font-family: 'Murecho', sans-serif;
+    font-size: .95em;
+    color: silver;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    border-bottom: 4px solid black;
+}
+hr {
+    width: 90%;
+    background-color: black;
+    border: 1px solid black;
+    margin-top: 3px;
+    margin-bottom: 20px;
+} 
+
+
+/* Contact Info */
+fieldset {
+    border: none;
+}
+legend {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.3em;
+    font-weight: 200;
+    letter-spacing: .03em;
+    margin-bottom: 10px;
+}
+fieldset label {
+    font-family: 'Murecho', sans-serif;
+    font-size: .90em;
+    font-weight: 200;
+}
+#name,
+#email,
+#phone,
+#address,
+#city,
+#zip,
+#state {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #eff0f1;
+    border: 1px solid #eff0f1;
+    border-radius: 6px;
+}
+#name:focus,
+#email:focus,
+#phone:focus,
+#address:focus,
+#city:focus,
+#zip:focus {
+    outline: none;
+    border: 2px solid #46B2CD;
+    background-color: whitesmoke;
+    transition: background-color 1000ms;
+    transition: border-color 1000ms; 
+}
+fieldset select {
+    width: 97%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #eff0f1;
+    border-radius: 6px;
+    font-family: 'Murecho', sans-serif;
+}
+
+#zip {
+    width: 50%;
+}
+::placeholder {
+    margin-right: 15px;
+    font-family: 'Murecho', sans-serif;
+    font-size: 1em;
+    color: silver; 
+    text-align: right;
+}
+
+/* Newsletter */
+fieldset .news {
+    margin-bottom: 0;
+    border-top: 2px solid black;
+    width: 100%;
+    padding-top: 25px;
+}
+p {
+    margin: 15px 0 15px 8px;
+    font-family: 'Murecho', sans-serif;
+    font-size: .95em;
+    font-weight: 200;
+    letter-spacing: .04em;
+}
+#html_news,
+#css,
+#javascript,
+#html,
+#plain_text {
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+.html_news,
+.css_news,
+.js_news,
+.html_format,
+.plain_text_format {
+    font-family: 'Murecho', sans-serif;
+    font-size: .95em;
+    font-weight: 200;
+    letter-spacing: .04em;
+}
+
+#comments {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 100px;
+    background-color: #eff0f1;
+    border: solid #eff0f1;
+    border-radius: 5px;
+}
+button {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 55px;
+    background-color: #46B2CD;
+    border: solid #46B2CD;
+    border-radius: 5px;
+    font-size: 1.25em;
+    font-family: 'DM Serif Text', serif;
+    letter-spacing: .045em;
+    color: white;
+}
+footer {
+    height: 50px;
+    font-style: italic;
+    letter-spacing: .01em;
+    color: silver;
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .sub-header {
+        max-width: 65%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub-header h2 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .row-1 {
+        max-width: 65%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .row-1 label {
+        flex-basis: 40%;
+        max-width: 100px;
+    }
+    .row-1 input,
+    .row-1 select {
+        flex-basis: 70%;
+    }
+    .row-1 legend {
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+    .col {
+        max-height: 50px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .row-2 {
+        max-width: 65%;
+        margin: auto;
+    }
+    hr {
+        width: 58.6%;
+    } 
+}
+
+
+
+@media screen and (min-width: 1008px) {
+   .sub-header {
+       max-width: 55%;
+       margin: auto;
+       display: flex;
+       flex-wrap: wrap;
+   }
+    .sub-header h2 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .row-1 {
+        max-width: 50%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .row-1 label {
+        flex-basis: 40%;
+        max-width: 100px;
+    }
+    .row-1 input,
+    .row-1 select {
+        flex-basis: 75%;
+    }
+    .row-1 legend {
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+    .col {
+        max-height: 50px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .row-2 {
+        max-width: 50%;
+        margin: auto;
+    }
+    hr {
+        width: 49.5%;
+    } 
+}
