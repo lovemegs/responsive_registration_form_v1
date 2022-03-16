@@ -81,7 +81,9 @@ fieldset label {
 #phone:focus,
 #address:focus,
 #city:focus,
-#zip:focus {
+#zip:focus,
+#state:focus,
+#comments:focus {
     outline: none;
     border: 2px solid #46B2CD;
     background-color: whitesmoke;
@@ -186,13 +188,12 @@ footer {
         margin-right: auto;
         margin-left: auto;
     }
-    
     .row-1 {
         max-width: 65%;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
     .row-1 label {
         flex-basis: 40%;
@@ -218,6 +219,9 @@ footer {
     hr {
         width: 58.6%;
     } 
+    #zip {
+        flex-basis: 25%;
+    }
 }
 
 
@@ -238,7 +242,7 @@ footer {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
     .row-1 label {
         flex-basis: 40%;
@@ -264,4 +268,8 @@ footer {
     hr {
         width: 49.5%;
     } 
+    #zip {
+        flex-basis: 25%;   
+    }
+
 }
